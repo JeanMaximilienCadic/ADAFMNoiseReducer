@@ -235,10 +235,21 @@ AdaResNet(
 )
 ```
 
-## Installation
+## Installation (Choose the solution you prefer)
+Wheel
 ```
 pip install -r adafmnoisereducer-1.0-py36-none-any.whl
 ```
+Setup
+```
+python setup.py install
+```
+Pypi
+```
+pip install ADAFMNoiseReducer
+```
+
+
 ## Getting started
 Test an inference on sample image
 ```python
