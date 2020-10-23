@@ -238,7 +238,7 @@ AdaResNet(
 ## Installation (Choose the solution you prefer)
 Wheel
 ```
-pip install -r adafmnoisereducer-1.0-py36-none-any.whl
+pip install adafmnoisereducer-1.0-py36-none-any.whl
 ```
 Setup
 ```
