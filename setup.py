@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='ADAFMNoiseReducer',
-    version="1.0",
+    version="1.0.2",
     long_description="Simple noise reducer from ADAFM architecture",
     package_data={
         'ADAFMNoiseReducer': [

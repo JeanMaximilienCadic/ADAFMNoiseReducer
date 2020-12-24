@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: ADAFMNoiseReducer
+Version: 1.0.2
+Summary: Simple noise reducer from ADAFM architecture
+Home-page: https://github.com/JeanMaximilienCadic
+Author: Jean Maximilien Cadic
+Author-email: j.cadic@pm.me
+License: MIT
+Description: Simple noise reducer from ADAFM architecture
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6

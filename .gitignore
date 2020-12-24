@@ -1,2 +1,12 @@
-build_wheel.sh
+.git
 .idea
+__data__
+ADAFMNoiseReducer/ADAFMNoiseReducerModel.pth
+adafmnoisereducer-1.0.2-py36-none-any.whl
+build/lib/ADAFMNoiseReducer/ADAFMNoiseReducerModel.pth
+ADAFMNoiseReducer/models/__init__.py
+adafmnoisereducer-1.0-py36-none-any.whl
+adafmnoisereducer-1.0.1-py36-none-any.whl
+ADAFMNoiseReducer/models/modules/__init__.py
+build/lib/ADAFMNoiseReducer/models/__init__.py
+build/lib/ADAFMNoiseReducer/models/modules/__init__.py

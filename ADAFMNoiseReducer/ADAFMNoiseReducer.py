@@ -6,11 +6,12 @@ from ADAFMNoiseReducer.models.SR_model import SRModel
 from ADAFMNoiseReducer.utils import tensor2img
 
 class ADAFMNoiseReducer:
-    def __init__(self, coef=0.6):
+    def __init__(self, coef=0.6, gpu_ids=[0], stride=0.1):
         self._model = "sr"
-        self._gpu_ids = [0]
+        self._gpu_ids = gpu_ids
         self.coef = coef
-        self._interpolate_stride = 0.1
+        self.stride = stride
+        self._interpolate_stride = stride
         self._pretrain_model_G = os.path.join(os.path.dirname(__file__), "ADAFMNoiseReducerModel.pth")
         self._network_G = {
             "which_model_G": "adaptive_resnet"
@@ -23,11 +24,8 @@ class ADAFMNoiseReducer:
             }
 
         # Create model
-        stride = self._interpolate_stride if self._interpolate_stride is not None else 0.1
         self.model = SRModel(self._gpu_ids, self._network_G, None, self._pretrain_model_G)
         self.model_dict = torch.load(self._pretrain_model_G)
-        self.stride = stride
-        self.test_results = OrderedDict()
 
         # Update the model
         print('setting coef to {:.2f}'.format(self.coef))
