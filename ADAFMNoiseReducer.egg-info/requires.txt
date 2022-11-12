@@ -2,4 +2,4 @@ gnutools-python
 opencv-python==4.4.0.44
 torch==1.6.0
 torchvision==0.7.0
-numpy==1.19.1
+numpy==1.22.2
