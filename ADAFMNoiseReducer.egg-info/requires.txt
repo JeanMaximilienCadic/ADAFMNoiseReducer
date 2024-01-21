@@ -3,3 +3,4 @@ opencv-python==4.4.0.44
 torch==1.6.0
 torchvision==0.7.0
 numpy==1.19.1
+pillow>=10.2.0 # not directly required, pinned by Snyk to avoid a vulnerability
